@@ -1,0 +1,117 @@
+/* styles.css */
+
+/* Tetap sama */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e2e2dd;
+}
+
+header {
+    text-align: center;
+    background-color: #009f9c;
+    color: white;
+    padding: 20px 0;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+nav {
+    background-color: #444;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.designs-gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.designs-gallery img {
+    width: 30%;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #009f9c;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+/* Tambahan untuk "Tentang Saya" */
+#about p {
+    text-align: justify;
+}
+/* Tambahan untuk Responsivitas */
+@media only screen and (max-width: 768px) {
+    .designs-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .designs-gallery img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .profile-img {
+        width: 100px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .designs-gallery img {
+        width: 100%;
+    }
+
+    section {
+        margin: 5px;
+        padding: 10px;
+    }
+}
